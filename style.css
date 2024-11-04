@@ -1,0 +1,167 @@
+h2{
+  color: #000000;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #B2C98F;
+  font-family: "Press Start 2P", sans-serif;
+  line-height: 1.3;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: rgba(28, 27, 27, 0.8);
+  top: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+
+.logo-container{
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.logo{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.logo-container h2 {
+  color: #B2C98F;
+  margin-left: 20px;
+}
+
+.navbar{
+  margin-right: 40px;
+}
+
+.navbar ul{
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+}
+
+.navbar a{
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.navbar a::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  left: 0;
+  background: #FFC300;
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover::before{
+  width: 100%;
+}
+
+.navbar li{
+  float: left;
+}
+
+.container img{
+  display: block;
+  width: 100%;
+  height: 500px;
+  object-fit: fill;
+  filter: brightness(70%);
+}
+
+section{
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+#menu{
+  padding-top: 92px;
+  margin-top: -92px;
+}
+
+form {
+  background-color: antiquewhite;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+article {
+  display: flex;
+  background-color: antiquewhite;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+article img {
+  width: 200px;
+  height: auto; 
+  border-radius: 20px;
+  object-fit: contain;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.price {
+  margin-top: 5px;
+  text-align: center;
+}
+
+#order-form{
+  line-height: 1.8;
+}
+
+form input[type="submit"] {
+  font-family: "Press Start 2P", serif;
+  background-color: rgb(141, 149, 95);
+  height: 50px;
+  width: 250px;
+  margin-top: 8px;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: rgb(255, 255, 255);
+}
+
+form input[type="submit"]:hover {
+  background-color: rgb(180, 190, 100);
+  color: rgb(59, 49, 49);
+}
+
+footer{
+  text-align: center;
+  color: #fff;
+}
+
+.codedex-link{
+  color: #800020;
+  text-decoration: none;
+}
+
+.codedex-link:hover{
+  text-decoration: underline;
+}
